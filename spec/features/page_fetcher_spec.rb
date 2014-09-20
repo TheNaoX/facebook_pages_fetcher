@@ -9,8 +9,8 @@ feature "Fetch a page from facebook" do
 
   scenario "when providing the page id" do
     visit "/"
-    within "#facebook-fetcher" do
-      fill_in "#facebook-id", with: "329069337200839"
+    within "#facebook_fetcher" do
+      fill_in "facebook_id", with: "329069337200839"
     end
 
     within "#stored-pages-container" do

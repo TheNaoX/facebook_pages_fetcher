@@ -1,0 +1,6 @@
+.row
+  = form_tag "/", id: "facebook_fetcher" do
+    .large-6.columns.large-offset-2
+      = text_field_tag :facebook_id, nil, placeholder: "Facebook page id. Example: 329069337200839"
+    .large-4.columns
+      = submit_tag :add, class: "button expand"
