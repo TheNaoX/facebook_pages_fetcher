@@ -13,4 +13,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'puma'
 
-gem 'spring',        group: :development
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'spring'
+  gem "spring-commands-rspec", group: :development
+end
+
+group :test do
+  gem 'rspec'
+  gem 'capybara'
+  gem 'capybara-webkit'
+end
