@@ -16,7 +16,7 @@ gem 'puma'
 group :development, :test do
   gem 'rspec-rails'
   gem 'spring'
-  gem "spring-commands-rspec", group: :development
+  gem "spring-commands-rspec"
 end
 
 group :test do
