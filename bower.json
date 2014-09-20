@@ -14,8 +14,9 @@
     "tests"
   ],
   "dependencies" : {
-    "angularjs"  : "1.2.25",
-    "jquery"     : "2.1.1",
-    "foundation" : "5.4.4"
+    "angularjs"    : "1.2.25",
+    "jquery"       : "2.1.1",
+    "foundation"   : "5.4.4",
+    "font-awesome" : "4.2.0"
   }
 }
