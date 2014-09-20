@@ -1,0 +1,22 @@
+{
+  "name"         : "FacebookPagesFetcher",
+  "version"      : "0.0.1",
+  "homepage"     : "https://github.com/TheNaoX/facebook_pages_fetcher",
+  "authors"      : [ "Antonio Chavez <cavjzz@gmail.com>" ],
+  "description"  : "A pages fetcher for facebook",
+  "license"      : "MIT",
+  "private"      : true,
+  "ignore"       : [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies" : {
+    "angularjs"    : "1.2.25",
+    "jquery"       : "2.1.1",
+    "foundation"   : "5.4.4",
+    "font-awesome" : "4.2.0"
+  }
+}
