@@ -71,6 +71,10 @@ GEM
       moped (~> 2.0.0)
       origin (~> 2.1)
       tzinfo (>= 0.3.37)
+    mongoid-rspec (1.10.0)
+      mongoid (>= 3.0.1)
+      rake
+      rspec (>= 2.14)
     moped (2.0.0)
       bson (~> 2.2)
       connection_pool (~> 2.0)
@@ -178,6 +182,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mongoid
+  mongoid-rspec
   puma
   rails (= 4.1.6)
   rails_12factor

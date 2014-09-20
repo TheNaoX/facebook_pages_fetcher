@@ -10,6 +10,9 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
+
+  config.include Mongoid::Matchers, type: :model
+
   config.before :suite do
     DatabaseCleaner.strategy = :truncation
     DatabaseCleaner.orm = "mongoid"
@@ -18,4 +21,6 @@ RSpec.configure do |config|
   config.before :each do
     DatabaseCleaner.clean
   end
+
+  config.deprecation_stream = File.open('log/deprecations.log', 'w')
 end

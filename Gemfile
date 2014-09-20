@@ -26,6 +26,7 @@ group :test do
   gem 'capybara'
   gem 'capybara-webkit'
   gem 'database_cleaner'
+  gem 'mongoid-rspec'
 end
 
 gem 'rails_12factor', group: :production
