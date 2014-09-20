@@ -26,3 +26,5 @@ group :test do
   gem 'capybara'
   gem 'capybara-webkit'
 end
+
+gem 'rails_12factor', group: :production
