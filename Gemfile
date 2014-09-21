@@ -15,6 +15,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'puma'
 gem 'slim'
 gem 'koala'
+gem 'font-awesome-rails'
 
 # Facebook authentication
 
