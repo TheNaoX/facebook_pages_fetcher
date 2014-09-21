@@ -2,5 +2,6 @@
   .large-10.columns.large-offset-2
     .facebook-page-item-container ng-repeat="page in pages"
       img(ng-src="{{ page.profile_picture }}")
-      h3
-        | {{ page.name }}
+      = link_to "facebook/pages/{{ page.id }}" do
+        h3
+          | {{ page.name }}

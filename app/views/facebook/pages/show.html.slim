@@ -1,0 +1,7 @@
+.show-page-container
+  .row
+    .large-10.columns.large-offset-2.page-headline
+      = link_to "javascript:void(0)" do
+        = image_tag @page.profile_picture, class: "th"
+      h2 = @page.name
+
