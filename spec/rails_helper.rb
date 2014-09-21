@@ -5,6 +5,7 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rails/mongoid'
 require 'database_cleaner'
+require "codeclimate-test-reporter"
 
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
@@ -17,6 +18,7 @@ RSpec.configure do |config|
   Capybara.javascript_driver = :webkit
 
   config.before :suite do
+    CodeClimate::TestReporter.start
     DatabaseCleaner.strategy = :truncation
     DatabaseCleaner.orm = "mongoid"
   end
