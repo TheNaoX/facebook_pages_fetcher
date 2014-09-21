@@ -40,9 +40,4 @@ class User
       user.image    = auth.info.image
     end
   end
-
-  def self.serialize_from_session(key, salt)
-    record = to_adapter.get(key.to_s)
-    record if record && record.authenticatable_salt == salt
-  end
 end
