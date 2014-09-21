@@ -6,6 +6,10 @@ class User
     :recoverable, :rememberable, :trackable, :validatable,
     :omniauthable, omniauth_providers: [:facebook]
 
+  ## Custom fields
+  field :name,  type: String
+  field :image, type: String
+
   ## Database authenticatable
   field :email,              type: String, default: ""
   field :encrypted_password, type: String, default: ""
@@ -25,7 +29,6 @@ class User
   field :last_sign_in_ip,    type: String
 
   ## Omniauthable
-
   field :provider, type: String
   field :uid,      type: String
 
@@ -36,5 +39,10 @@ class User
       user.name     = auth.info.name
       user.image    = auth.info.image
     end
+  end
+
+  def self.serialize_from_session(key, salt)
+    record = to_adapter.get(key.to_s)
+    record if record && record.authenticatable_salt == salt
   end
 end

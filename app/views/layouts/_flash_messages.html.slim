@@ -3,6 +3,8 @@
     - if notice
       p.alert-box.warning
         = notice
+        = link_to "&times;".html_safe, "javascript:void(0)", class: "close"
     - if alert
       p.alert-box.alert
         = alert
+        = link_to "&times;".html_safe, "javascript:void(0)", class: "close"
