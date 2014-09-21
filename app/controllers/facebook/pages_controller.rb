@@ -6,7 +6,7 @@ module Facebook
     end
 
     rescue_from Mongoid::Errors::Validations do |e|
-      render json: { page: { errors: e.message } },
+      render json: { page: { errors: "This Facebook page is already fetched." } },
         status: :unprocessable_entity
     end
 
