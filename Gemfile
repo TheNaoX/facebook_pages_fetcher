@@ -30,8 +30,6 @@ group :test do
   gem 'mongoid-rspec'
   gem 'capybara-webkit'
   gem 'database_cleaner'
-  #gem 'vcr'
-  #gem 'webmock'
 end
 
 gem 'rails_12factor', group: :production
