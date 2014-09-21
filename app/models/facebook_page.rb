@@ -2,7 +2,7 @@ class FacebookPage
   include Mongoid::Document
   include Mongoid::Timestamps
 
-  field :facebook_id,     type: Integer
+  field :facebook_id,     type: String
   field :name,            type: String
   field :profile_picture, type: String
 

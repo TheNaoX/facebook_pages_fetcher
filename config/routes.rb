@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   namespace :facebook do
-    resources :pages, only: [:create]
+    resources :pages, only: [:index, :create]
   end
 end

@@ -8,15 +8,13 @@ feature "Fetch a page from facebook", :js do
   end
 
   pending "when providing the page id" do
-    VCR.use_cassette('facebook-page-response') do
-      visit "/"
-      within "#facebook_fetcher" do
-        fill_in "facebook_id", with: "188091757763"
-      end
+    visit "/"
+    within "#facebook_fetcher" do
+      fill_in "facebook_id", with: "188091757763"
+    end
 
-      within "#stored-pages-container" do
-        expect(page).to have_content("Tigerlily")
-      end
+    within "#stored-pages-container" do
+      expect(page).to have_content("Tigerlily")
     end
   end
 end

@@ -5,7 +5,6 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rails/mongoid'
 require 'database_cleaner'
-require 'vcr'
 
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
@@ -13,6 +12,7 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
 
   config.include Mongoid::Matchers, type: :model
+  config.include FactoryGirl::Syntax::Methods
 
   Capybara.javascript_driver = :webkit
 
@@ -26,10 +26,4 @@ RSpec.configure do |config|
   end
 
   config.deprecation_stream = File.open('log/deprecations.log', 'w')
-end
-
-VCR.configure do |c|
-  c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
-  c.hook_into :webmock
-  c.ignore_localhost = true
 end

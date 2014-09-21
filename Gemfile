@@ -17,19 +17,21 @@ gem 'slim'
 gem 'koala'
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'pry'
   gem 'spring'
+  gem 'rspec-rails'
   gem "spring-commands-rspec"
+  gem 'factory_girl_rails', '~> 4.0'
 end
 
 group :test do
-  gem 'vcr'
   gem 'rspec'
-  gem 'webmock'
   gem 'capybara'
+  gem 'mongoid-rspec'
   gem 'capybara-webkit'
   gem 'database_cleaner'
-  gem 'mongoid-rspec'
+  #gem 'vcr'
+  #gem 'webmock'
 end
 
 gem 'rails_12factor', group: :production
