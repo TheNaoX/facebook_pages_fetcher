@@ -8,6 +8,9 @@ html
     = csrf_meta_tags
 
   body
-    = render "layouts/navbar"
-    = render "layouts/flash_messages"
-    = yield
+    .bg-fixed
+    .global-container
+      = render "layouts/navbar"
+      = render "layouts/flash_messages"
+      = yield
+    .footer
