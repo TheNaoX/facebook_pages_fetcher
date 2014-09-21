@@ -25,6 +25,8 @@ group :development, :test do
 end
 
 group :test do
+  gem 'vcr'
+  gem 'webmock'
   gem 'rspec'
   gem 'capybara'
   gem 'mongoid-rspec'

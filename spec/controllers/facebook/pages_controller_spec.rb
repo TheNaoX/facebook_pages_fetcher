@@ -15,20 +15,22 @@ describe Facebook::PagesController do
 
   describe "#create" do
     it "creates a facebook page from the given id" do
-      expect {
-        post :create, page: { facebook_id: "188091757763" }, format: :json
-      }.to change(FacebookPage, :count).by(1)
+      VCR.use_cassette('facebook-page-response') do
+        expect do
+          post :create, page: { facebook_id: "188091757763" }, format: :json
+        end.to change(FacebookPage, :count).by(1)
+      end
     end
 
     it "does not create the page if the id is incorrect" do
-      post :create, page: { facebook_id: "" }, format: :json
-      res = JSON.parse(response.body)
-      expect(response.status).to eq(422)
-      expect(res).to eq({
-        "page" => {
+      VCR.use_cassette('facebook-page-response-error') do
+        post :create, page: { facebook_id: "" }, format: :json
+        res = JSON.parse(response.body)
+        expect(response.status).to eq(422)
+        expect(res).to eq({ "page" => {
           "errors" => "Please provide a valid facebook page id"
-        }
-      })
+        }})
+      end
     end
   end
 end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://graph.facebook.com/188091757763?access_token=CAADFZAIL8xY8BAF1fTUVZCiDoKBSDLCymyU3kntOOr60BY2JvxOEhuFmZAr0d1y9B55ZAHwSfUWev3LXndW1NEZAa2o2HqqjJu1MLjr63WqSlO7ngZC7uiFxME2oZCyxjtRDPQip2S0kxehUKoEr0sPoEU6gTl1qiVetS0GyWWi12U6yif7ZC7KZBKnPonYrw1RJaDZBbpx4DOeaWOo7ZBGdZARy
+    uri: https://graph.facebook.com/188091757763?access_token=CAADFZAIL8xY8BAB3c2ygdSGEqhowzbzenpMeZBvVLrguBTMvHNMfsZCf7aLjhmqdvY2kCmSQD6mdlLhNxeZByG8QDqZCzVzHZC3TQCMQJyqWDKjQ2hqSlFeZAtZBG8LUnaYqMVoiO8iUSgiytC6zVuTlwsdXx7X4fxMymIQOSP7Ex2KP3ch8Q5rWkurJxsDRKNlSEFBXgUFRZC2Y4OBPYcvZBs
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Facebook-Api-Version:
       - v1.0
       Etag:
-      - '"ea19bd5d4bf55c506184c3c63796087782f82aab"'
+      - '"61761db182c3a12e34a91d601937cb221cfc3205"'
       Content-Type:
       - application/json; charset=UTF-8
       Pragma:
@@ -35,13 +35,13 @@ http_interactions:
       Expires:
       - Sat, 01 Jan 2000 00:00:00 GMT
       X-Fb-Debug:
-      - Z6X3GTi6x7OzWFM1ygrAU1boGkYH0Pc/cFBQc3s9sph2pfKmEsFRwUpp68gecEOjRAO63l3DGABNxHkWb7FV+Q==
+      - 78d42bdSwmb+ZAMVHlj2RI5RqZeYFyNdHYAahUkiHBBBrW9As4iVD1nPkNj5R+Rfcb6o0+1bvgLaM0oEGkXpAg==
       Date:
-      - Sun, 21 Sep 2014 00:36:08 GMT
+      - Sun, 21 Sep 2014 04:19:17 GMT
       Connection:
       - keep-alive
       Content-Length:
-      - '1527'
+      - '1529'
     body:
       encoding: UTF-8
       string: '{"id":"188091757763","about":"Connecting 71.251.932 people on Facebook
@@ -52,7 +52,7 @@ http_interactions:
         Media Management Made easy.\n\nWe help you optimize and streamline your business
         actions with our amazingly simple Social Media Management Software.\n\nWorking
         with more than 80 iconic brands, the company has run campaigns across 60 countries
-        and serving 72 million people.\n","founded":"2009","has_added_app":false,"is_community_page":false,"is_published":true,"likes":10948,"link":"https:\/\/www.facebook.com\/Tigerlilyapps","location":{"city":"Paris","country":"France","latitude":48.851546070062,"longitude":2.3764281178548,"street":"94
+        and serving 72 million people.\n","founded":"2009","has_added_app":false,"is_community_page":false,"is_published":true,"likes":10949,"link":"https:\/\/www.facebook.com\/Tigerlilyapps","location":{"city":"Paris","country":"France","latitude":48.851546070062,"longitude":2.3764281178548,"street":"94
         avenue Ledru Rollin","zip":"75011"},"mission":"The Tigerlily software helps
         iconic brands grow their business through social media. \n\nOptimize your
         conversations, engage users trough rich contents or contests and analyze your
@@ -71,10 +71,10 @@ http_interactions:
         Enhance your social mix (organic, paid and earned) and compare all your Pages
         and their KPIs.","talking_about_count":14,"username":"Tigerlilyapps","website":"http:\/\/www.tigerlilyapps.com","were_here_count":254}'
     http_version: 
-  recorded_at: Sun, 21 Sep 2014 00:36:09 GMT
+  recorded_at: Sun, 21 Sep 2014 04:19:17 GMT
 - request:
     method: get
-    uri: https://graph.facebook.com/188091757763/picture?access_token=CAADFZAIL8xY8BAF1fTUVZCiDoKBSDLCymyU3kntOOr60BY2JvxOEhuFmZAr0d1y9B55ZAHwSfUWev3LXndW1NEZAa2o2HqqjJu1MLjr63WqSlO7ngZC7uiFxME2oZCyxjtRDPQip2S0kxehUKoEr0sPoEU6gTl1qiVetS0GyWWi12U6yif7ZC7KZBKnPonYrw1RJaDZBbpx4DOeaWOo7ZBGdZARy
+    uri: https://graph.facebook.com/188091757763/picture?access_token=CAADFZAIL8xY8BAB3c2ygdSGEqhowzbzenpMeZBvVLrguBTMvHNMfsZCf7aLjhmqdvY2kCmSQD6mdlLhNxeZByG8QDqZCzVzHZC3TQCMQJyqWDKjQ2hqSlFeZAtZBG8LUnaYqMVoiO8iUSgiytC6zVuTlwsdXx7X4fxMymIQOSP7Ex2KP3ch8Q5rWkurJxsDRKNlSEFBXgUFRZC2Y4OBPYcvZBs
     body:
       encoding: US-ASCII
       string: ''
@@ -107,9 +107,9 @@ http_interactions:
       Expires:
       - Sat, 01 Jan 2000 00:00:00 GMT
       X-Fb-Debug:
-      - 9BHdkUqsg3dYOTAfQWiJixUnIDCsy/2JAPVIG+rL720kVCmMKAiPZLs6GEs8UrN1Q4s2oUNziLnu+fdx8hXzeg==
+      - v8F2jPbZFHrFJVdhvZG/8frnaQjDJm21WQnQ8qeRVMIo/Vs9c2JKylNzVZXYxx2XiF0gIE+OUNxegR7dy+ZTNA==
       Date:
-      - Sun, 21 Sep 2014 00:14:39 GMT
+      - Sun, 21 Sep 2014 04:12:35 GMT
       Connection:
       - keep-alive
       Content-Length:
@@ -118,5 +118,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 21 Sep 2014 00:36:09 GMT
+  recorded_at: Sun, 21 Sep 2014 04:19:18 GMT
 recorded_with: VCR 2.9.3
