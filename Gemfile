@@ -23,7 +23,9 @@ group :development, :test do
 end
 
 group :test do
+  gem 'vcr'
   gem 'rspec'
+  gem 'webmock'
   gem 'capybara'
   gem 'capybara-webkit'
   gem 'database_cleaner'

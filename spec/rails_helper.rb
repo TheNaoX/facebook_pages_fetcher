@@ -5,6 +5,7 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rails/mongoid'
 require 'database_cleaner'
+require 'vcr'
 
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
@@ -23,4 +24,9 @@ RSpec.configure do |config|
   end
 
   config.deprecation_stream = File.open('log/deprecations.log', 'w')
+end
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'fixtures/vcr_cassettes'
+  c.hook_into :webmock
 end
