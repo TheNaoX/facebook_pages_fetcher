@@ -5,6 +5,6 @@ feature "Landing page content" do
     visit "/"
 
     expect(page).to have_content("FetcherApp")
-    expect(page).to have_content("Please sign in with Facebook to get started")
+    expect(page).to have_content("Login with facebook to get started")
   end
 end
