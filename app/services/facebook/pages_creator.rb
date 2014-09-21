@@ -2,10 +2,13 @@ module Facebook
   module PagesCreator
     extend self
 
-    def call(facebook_id, user_id)
+    def call(facebook_id, user)
       token = Rails.application.secrets.facebook_token
-      graph = Koala::Facebook::API.new(token)
-      create_page(graph, facebook_id, user_id)
+      graph = Koala::Facebook::API.new(user.access_token)
+      create_page(graph, facebook_id, user.id)
+    rescue Exception => e
+      user.renew_token
+      call(facebook_id, user)
     end
 
     def create_page(graph, facebook_id, user_id)

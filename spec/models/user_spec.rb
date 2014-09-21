@@ -6,8 +6,9 @@ end
 
 describe User do
   describe ".from_omniauth" do
+    let(:credentials) { double token: "foo" }
     let(:info) { double email: "email@example.com", name: "John", image: "http://google.com" }
-    let(:auth) { double provider: "facebook", uid: "12345678", info: info }
+    let(:auth) { double provider: "facebook", uid: "12345678", info: info, credentials: credentials }
 
     it "creates the user from omniauth" do
       expect do

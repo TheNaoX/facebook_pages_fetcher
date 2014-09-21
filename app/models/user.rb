@@ -29,17 +29,32 @@ class User
   field :last_sign_in_ip,    type: String
 
   ## Omniauthable
-  field :provider, type: String
-  field :uid,      type: String
+  field :provider,             type: String
+  field :uid,                  type: String
+  field :access_token,         type: String
+  field :access_token_expires, type: Integer
 
   has_many :facebook_pages
 
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
-      user.email    = auth.info.email
-      user.password = Devise.friendly_token[0,20]
-      user.name     = auth.info.name
-      user.image    = auth.info.image
+      user.email                = auth.info.email
+      user.password             = Devise.friendly_token[0,20]
+      user.name                 = auth.info.name
+      user.image                = auth.info.image
+      user.access_token         = auth.credentials.token
+      user.access_token_expires = auth.credentials.expires_at
     end
+  end
+
+  def token_not_expired?
+    access_token_expires > Time.now.to_i
+  end
+
+  def renew_token
+    oauth_hash = Facebook::TokenRenewer.(access_token)
+    self.access_token         = oauth_hash['access_token']
+    self.access_token_expires = oauth_hash['expires']
+    save!
   end
 end
