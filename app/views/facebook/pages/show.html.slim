@@ -16,4 +16,4 @@
         p
           | {{ post.message }}
       small
-        | {{ post.created_time | timeAgo }}
+        | {{ post.created_time | fromNow }}
