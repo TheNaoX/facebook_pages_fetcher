@@ -1,2 +1,16 @@
+// Background color for the top bar
+$topbar-bg-color: white !default;
+$topbar-bg: $topbar-bg-color !default;
+$topbar-dropdown-link-color: black !default;
+$topbar-link-color: black !default;
+$topbar-link-color-hover: black !default;
+$topbar-link-color-active: black !default;
+$topbar-link-color-active-hover: black !default;
+$topbar-menu-link-color: black !default;
+$topbar-menu-icon-color: black !default;
+$topbar-link-bg-color-hover: gray !default;
+$topbar-link-bg-hover: gray !default;
+
+
 @import "foundation/scss/normalize.scss";
 @import "foundation/scss/foundation.scss";
