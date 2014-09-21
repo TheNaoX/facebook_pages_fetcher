@@ -14,7 +14,7 @@ module Facebook
       page    = graph.get_object  facebook_id
       picture = graph.get_picture facebook_id
 
-      FacebookPage.create_page(facebook_id, page["name"], picture, user_id)
+      FacebookPage.create_page(facebook_id, page["name"], picture, user_id, page["about"])
     end
   end
 end
