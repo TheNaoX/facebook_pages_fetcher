@@ -2,14 +2,10 @@
   .background-transparent.page-headline
     .row
       .large-12.columns
-        .headline-container
-          .large-1.columns
-            = link_to "javascript:void(0)", class: "th" do
-              = image_tag @page.profile_picture
-          .large-3.columns
-            h2 = @page.name
-          .large-8.columns
-            p = @page.about
+        = link_to "javascript:void(0)", class: "th" do
+          = image_tag @page.profile_picture
+        h2 = @page.name
+        p = @page.about
 
   .background-white
     .row
