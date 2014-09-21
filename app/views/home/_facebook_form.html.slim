@@ -1,6 +1,12 @@
 .row
-  = form_tag "/", id: "facebook_fetcher" do
+  form(ng-submit="submit_facebook_page()")
     .large-6.columns.large-offset-2
-      = text_field_tag :facebook_id, nil, placeholder: "Facebook page id. Example: 188091757763"
+      input#facebook_id(
+        type="text"
+        ng-model="page.facebook_id"
+        placeholder= "Facebook page id. Example: 188091757763"
+        ng-required
+      )
+
     .large-4.columns
       = submit_tag :add, class: "button expand"

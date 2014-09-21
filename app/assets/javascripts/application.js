@@ -18,4 +18,10 @@
 //= require foundation/js/foundation
 //= require jquery-placeholder/jquery.placeholder
 //= require jquery.cookie/jquery.cookie
+//= require init
+//= require_tree ./controllers/
 //= require_tree .
+
+$(function(){
+  angular.bootstrap(document, ['FBFetcher']);
+});
