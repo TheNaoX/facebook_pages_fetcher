@@ -1,0 +1,9 @@
+nav.top-bar(data-topbar role="navigation")
+  ul.title-area
+    li.name
+      h1 = link_to "FetcherApp", "/"
+
+  section.top-bar-section
+    ul.left
+      - if user_signed_in?
+        li = link_to "Log out", destroy_user_session_path, method: :delete
