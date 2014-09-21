@@ -5,10 +5,12 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rails/mongoid'
 require 'database_cleaner'
+require "codeclimate-test-reporter"
 
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 RSpec.configure do |config|
+  CodeClimate::TestReporter.start
   config.infer_spec_type_from_file_location!
 
   config.include Mongoid::Matchers, type: :model
@@ -32,4 +34,5 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   c.hook_into :webmock
   c.ignore_localhost = true
+  c.ignore_hosts 'codeclimate.com'
 end
