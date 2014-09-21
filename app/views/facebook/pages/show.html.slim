@@ -5,14 +5,15 @@
         = image_tag @page.profile_picture
       h2 = @page.name
 
-  .row ng-repeat="post in posts"
+  .row.page-post ng-repeat="post in posts"
     .large-10.columns.large-offset-2.page-post
       h4
         | {{ post.from.name }}
-      .post-body
+      .large-3.columns
         = link_to "javascript:void(0)", class: "th" do
           img(ng-src="{{ post.picture }}" ng-show="post.picture")
+      .large-9.columns
         p
           | {{ post.message }}
-        small
-          | {{ post.created_time | timeAgo }}
+      small
+        | {{ post.created_time | timeAgo }}

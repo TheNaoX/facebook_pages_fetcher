@@ -2,4 +2,7 @@
   .page-headline {
     img, h2 { display: inline-block; }
   }
+  .page-post {
+    a, .post-text { display: inline-block; }
+  }
 }
