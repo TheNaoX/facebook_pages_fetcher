@@ -14,8 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require modernizr/modernizr
-//= require angularjs/angular
+//= require angular/angular
 //= require angular-resource/angular-resource
+//= require angular-timeago/src/timeAgo
 //= require foundation/js/foundation
 //= require jquery-placeholder/jquery.placeholder
 //= require jquery.cookie/jquery.cookie

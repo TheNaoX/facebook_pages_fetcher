@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/188091757763/feed?access_token=CAADFZAIL8xY8BAB3c2ygdSGEqhowzbzenpMeZBvVLrguBTMvHNMfsZCf7aLjhmqdvY2kCmSQD6mdlLhNxeZByG8QDqZCzVzHZC3TQCMQJyqWDKjQ2hqSlFeZAtZBG8LUnaYqMVoiO8iUSgiytC6zVuTlwsdXx7X4fxMymIQOSP7Ex2KP3ch8Q5rWkurJxsDRKNlSEFBXgUFRZC2Y4OBPYcvZBs&limit=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Facebook-Api-Version:
+      - v1.0
+      Etag:
+      - '"a642ae5931547ebad506c88d547ad13c477c0827"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fb-Rev:
+      - '1422324'
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - LzO+0WEjVSexl90Ob3z6OVKLc6Cya80pD0dteyQzeVkIVPFyUUmHiH8D0HzXTocmzGVyjObyz35Tt7KdKXCsaQ==
+      Date:
+      - Sun, 21 Sep 2014 05:04:23 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1642'
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"188091757763_10152590438442764","from":{"category":"Internet\/software","category_list":[{"id":"358483060859947","name":"Startup"},{"id":"152142351517013","name":"Corporate
+        Office"}],"name":"Tigerlily","id":"188091757763"},"message":"Tigerlily Recrute
+        !","picture":"https:\/\/fbexternal-a.akamaihd.net\/safe_image.php?d=AQDJY6wm2Twvptay&w=158&h=158&url=https\u00253A\u00252F\u00252Fapp.work4labs.com\u00252Ffiles\u00252F538d48ebc995fed9208b45a0","link":"http:\/\/workfor.us\/3w7nt","name":"(Stage)
+        Content & Community Manager","caption":"Paris","description":"Envie de travailler
+        chez un des leaders du marketing social ? Sp\u00e9cialis\u00e9e dans l\u2019usage
+        des m\u00e9dia sociaux, Tigerlily \u00e9dite une plateforme applicative d\u00e9di\u00e9e
+        aux marques et aux agences leur permettant...","icon":"https:\/\/fbstatic-a.akamaihd.net\/rsrc.php\/v2\/yD\/r\/aS8ecmYRys0.gif","actions":[{"name":"Comment","link":"https:\/\/www.facebook.com\/188091757763\/posts\/10152590438442764"},{"name":"Like","link":"https:\/\/www.facebook.com\/188091757763\/posts\/10152590438442764"}],"privacy":{"value":""},"type":"link","status_type":"shared_story","application":{"name":"Work
+        for Us","namespace":"workforus","id":"404596412628"},"created_time":"2014-07-03T12:49:06+0000","updated_time":"2014-07-03T12:49:06+0000","likes":{"data":[{"id":"1045879974","name":"Andrea
+        Soranidis"},{"id":"837344139","name":"Jeremy Mtz"}],"paging":{"cursors":{"after":"ODM3MzQ0MTM5","before":"MTA0NTg3OTk3NA=="}}}},{"id":"188091757763_10152571057382764","from":{"category":"Internet\/software","category_list":[{"id":"358483060859947","name":"Startup"},{"id":"152142351517013","name":"Corporate
+        Office"}],"name":"Tigerlily","id":"188091757763"},"message":"D\u00e9couvrez
+        la derni\u00e8re r\u00e9alisation des \u00e9quipes de Tigerlily \u00e0 l''occasion
+        de la Coupe du Monde -> http:\/\/goo.gl\/rw199W","picture":"https:\/\/fbexternal-a.akamaihd.net\/safe_image.php?d=AQBFlDHHXSU0LzbH&w=130&h=130&url=http\u00253A\u00252F\u00252Fi.vimeocdn.com\u00252Fvideo\u00252F479792791_1280.jpg","link":"https:\/\/vimeo.com\/98919384","source":"http:\/\/vimeo.com\/moogaloop.swf?clip_id=98919384&autoplay=1","name":"Mondial
+        2014 - Soutenez l''Equipe de France !","description":"A l''occasion de la
+        Coupe du Monde 2014, la F\u00e9d\u00e9ration fran\u00e7aise de Football a
+        d\u00e9cid\u00e9 de proposer \u00e0 ses communaut\u00e9s sociales 2 exp\u00e9riences
+        innovantes ! D\u00e9couvrez\u2026","icon":"https:\/\/fbstatic-a.akamaihd.net\/rsrc.php\/v2\/yj\/r\/v2OnaTyTQZE.gif","actions":[{"name":"Comment","link":"https:\/\/www.facebook.com\/188091757763\/posts\/10152571057382764"},{"name":"Like","link":"https:\/\/www.facebook.com\/188091757763\/posts\/10152571057382764"}],"privacy":{"value":""},"type":"video","status_type":"shared_story","created_time":"2014-06-26T08:00:01+0000","updated_time":"2014-06-26T08:00:01+0000","likes":{"data":[{"id":"641582639","name":"Guillaume
+        Protard"},{"id":"1640594548","name":"Yves Pollak"},{"id":"848029423","name":"Lulu
+        Blop"},{"id":"581238779","name":"Benjamin Gateau"},{"id":"577620212","name":"Charlie
+        Rothwell"}],"paging":{"cursors":{"after":"NTc3NjIwMjEy","before":"NjQxNTgyNjM5"}}}}],"paging":{"previous":"https:\/\/graph.facebook.com\/v1.0\/188091757763\/feed?limit=10&access_token=CAADFZAIL8xY8BAB3c2ygdSGEqhowzbzenpMeZBvVLrguBTMvHNMfsZCf7aLjhmqdvY2kCmSQD6mdlLhNxeZByG8QDqZCzVzHZC3TQCMQJyqWDKjQ2hqSlFeZAtZBG8LUnaYqMVoiO8iUSgiytC6zVuTlwsdXx7X4fxMymIQOSP7Ex2KP3ch8Q5rWkurJxsDRKNlSEFBXgUFRZC2Y4OBPYcvZBs&since=1404391746&__previous=1","next":"https:\/\/graph.facebook.com\/v1.0\/188091757763\/feed?limit=10&access_token=CAADFZAIL8xY8BAB3c2ygdSGEqhowzbzenpMeZBvVLrguBTMvHNMfsZCf7aLjhmqdvY2kCmSQD6mdlLhNxeZByG8QDqZCzVzHZC3TQCMQJyqWDKjQ2hqSlFeZAtZBG8LUnaYqMVoiO8iUSgiytC6zVuTlwsdXx7X4fxMymIQOSP7Ex2KP3ch8Q5rWkurJxsDRKNlSEFBXgUFRZC2Y4OBPYcvZBs&until=1403769600"}}'
+    http_version: 
+  recorded_at: Sun, 21 Sep 2014 05:04:23 GMT
+recorded_with: VCR 2.9.3

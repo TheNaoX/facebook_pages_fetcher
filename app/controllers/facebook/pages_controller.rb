@@ -16,6 +16,10 @@ module Facebook
       render :show, status: :created
     end
 
+    def show
+      @page = FacebookPage.find(params[:id])
+    end
+
     private
 
     def pages_params

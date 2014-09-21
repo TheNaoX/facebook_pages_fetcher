@@ -1,4 +1,4 @@
-var FBFetcher = angular.module('FBFetcher', ['ngResource']).
+var FBFetcher = angular.module('FBFetcher', ['ngResource', 'yaru22.angular-timeago']).
   config(["$httpProvider", function($httpProvider) {
   var csrfToken = $('meta[name=csrf-token]').attr('content');
 

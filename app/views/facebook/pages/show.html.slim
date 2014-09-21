@@ -1,0 +1,19 @@
+.show-page-container ng-controller="FacebookPagePostsController" ng-init="get_posts('#{params[:id]}')"
+  .row
+    .large-10.columns.large-offset-2.page-headline
+      = link_to "javascript:void(0)", class: "th" do
+        = image_tag @page.profile_picture
+      h2 = @page.name
+
+  .row.page-post ng-repeat="post in posts"
+    .large-10.columns.large-offset-2.page-post
+      h4
+        | {{ post.from.name }}
+      .large-3.columns
+        = link_to "javascript:void(0)", class: "th" do
+          img(ng-src="{{ post.picture }}" ng-show="post.picture")
+      .large-9.columns
+        p
+          | {{ post.message }}
+      small
+        | {{ post.created_time | timeAgo }}
