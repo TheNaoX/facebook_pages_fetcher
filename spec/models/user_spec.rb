@@ -14,5 +14,12 @@ describe User do
         User.from_omniauth(auth)
       end.to change(User, :count).by(1)
     end
+
+    it "gets the already created user" do
+      User.from_omniauth(auth)
+      expect do
+        User.from_omniauth(auth)
+      end.to_not change(User, :count)
+    end
   end
 end
