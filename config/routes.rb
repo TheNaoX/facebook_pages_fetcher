@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users, only: [ :omniauth_callbacks, :sessions ]
+
   resources :home, only: [:index]
 
   root to: "home#index"

@@ -16,6 +16,11 @@ gem 'puma'
 gem 'slim'
 gem 'koala'
 
+# Facebook authentication
+
+gem 'devise'
+gem 'omniauth-facebook'
+
 group :development, :test do
   gem 'pry'
   gem 'spring'
