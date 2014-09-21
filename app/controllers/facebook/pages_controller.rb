@@ -1,7 +1,7 @@
 module Facebook
   class PagesController < ApplicationController
     def create
-      Facebook::PagesCreator.(pages_params[:facebook_id])
+      @page = Facebook::PagesCreator.(pages_params[:facebook_id])
       render :show, status: :created
     end
 

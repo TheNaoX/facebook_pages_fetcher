@@ -14,6 +14,8 @@ RSpec.configure do |config|
 
   config.include Mongoid::Matchers, type: :model
 
+  Capybara.javascript_driver = :webkit
+
   config.before :suite do
     DatabaseCleaner.strategy = :truncation
     DatabaseCleaner.orm = "mongoid"
@@ -29,4 +31,5 @@ end
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   c.hook_into :webmock
+  c.ignore_localhost = true
 end

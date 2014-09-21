@@ -1,7 +1,11 @@
-FBFetcher.controller('FacebookPagesController', ['$scope', '$http', function($scope, $http){
-  $scope.page = {};
+FBFetcher.controller('FacebookPagesController', ['$scope', '$http', 'Page', function($scope, $http, Page){
+  $scope.pages = [];
+  $scope.page = new Page();
 
   $scope.submit_facebook_page = function() {
-    console.log($scope.page);
+    $scope.page.$save(function(page, responseHeaders) {
+      $scope.pages.push(page);
+      $scope.page = new Page();
+    });
   };
 }]);

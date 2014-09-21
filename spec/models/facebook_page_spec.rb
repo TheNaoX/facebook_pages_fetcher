@@ -4,6 +4,7 @@ describe FacebookPage, 'validations' do
   it { expect(subject).to validate_presence_of :facebook_id     }
   it { expect(subject).to validate_presence_of :name            }
   it { expect(subject).to validate_presence_of :profile_picture }
+  it { expect(subject).to validate_uniqueness_of :facebook_id   }
 end
 
 describe FacebookPage do

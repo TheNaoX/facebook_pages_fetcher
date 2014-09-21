@@ -1,11 +1,13 @@
 class FacebookPage
   include Mongoid::Document
+  include Mongoid::Timestamps
 
   field :facebook_id,     type: Integer
   field :name,            type: String
   field :profile_picture, type: String
 
   validates :facebook_id, :name, :profile_picture, presence: true
+  validates :facebook_id, uniqueness: true
 
   def self.create_page(facebook_id, name, profile_picture)
     create!(facebook_id:     facebook_id,

@@ -1,2 +1,6 @@
-#stored-pages-container.row
+#stored-pages-container.row[ng-cloak]
   .large-12.columns
+    .facebook-page ng-repeat="page in pages"
+      img(ng-src="{{ page.profile_picture }}")
+      h3
+        | {{ page.name }}
