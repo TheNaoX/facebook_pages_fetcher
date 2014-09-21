@@ -1,13 +1,9 @@
 module Facebook
-  class PagesController < ApplicationController
+  class PagesController < Facebook::BaseController
     rescue_from Koala::Facebook::ClientError do |e|
       render json: { page: { errors: "Please provide a valid facebook page id" } },
         status: :unprocessable_entity
     end
-
-    before_filter :authenticate_user!
-
-    include ActionController::MimeResponds
 
     def index
       @pages = FacebookPage.all
