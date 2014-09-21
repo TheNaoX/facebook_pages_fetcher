@@ -4,13 +4,15 @@ body {
 .show-page-container {
   .page-headline {
     min-height: 100px;
-    .headline-container {
+    .row {
+      padding-top: 20px;
+      vertical-align: middle;
       img, h2, p { display: inline-block; }
       h2, p {
         vertical-align: middle;
         color: white;
+        margin: 0px;
       }
-      padding: 30px 0px 30px 50px;
     }
   }
   ul.posts-list {
