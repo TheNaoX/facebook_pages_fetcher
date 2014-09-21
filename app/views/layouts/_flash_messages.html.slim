@@ -1,10 +1,10 @@
 .row
   .large-12.columns
     - if notice
-      p.alert-box.warning
+      p.alert-box.info
         = notice
-        = link_to "&times;".html_safe, "javascript:void(0)", class: "close"
+        = link_to "&times;".html_safe, "#", class: "close"
     - if alert
       p.alert-box.alert
         = alert
-        = link_to "&times;".html_safe, "javascript:void(0)", class: "close"
+        = link_to "&times;".html_safe, "#", class: "close"
