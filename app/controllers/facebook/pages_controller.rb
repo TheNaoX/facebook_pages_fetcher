@@ -10,7 +10,8 @@ module Facebook
     end
 
     def create
-      @page = Facebook::PagesCreator.(pages_params[:facebook_id])
+      @page = Facebook::PagesCreator.(pages_params[:facebook_id],
+                                      current_user.id)
       render :show, status: :created
     end
 

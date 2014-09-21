@@ -8,7 +8,7 @@ describe Facebook::PagesController do
   before { sign_in user }
 
   describe "#index" do
-    before { create(:facebook_page) }
+    before { create(:facebook_page, user: user) }
 
     it "returns the array of stored facebook pages" do
       get :index, format: :json

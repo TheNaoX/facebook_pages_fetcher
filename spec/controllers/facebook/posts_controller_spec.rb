@@ -7,7 +7,7 @@ describe Facebook::PostsController do
   before { sign_in user }
 
   describe "#index" do
-    let(:page) { create(:facebook_page) }
+    let(:page) { create(:facebook_page, user: user) }
 
     it "returns the first 10 publications in the wall" do
       VCR.use_cassette("facebook-page-posts") do
