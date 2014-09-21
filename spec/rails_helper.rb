@@ -10,6 +10,7 @@ require "codeclimate-test-reporter"
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 RSpec.configure do |config|
+  CodeClimate::TestReporter.start
   config.infer_spec_type_from_file_location!
 
   config.include Mongoid::Matchers, type: :model
@@ -18,7 +19,6 @@ RSpec.configure do |config|
   Capybara.javascript_driver = :webkit
 
   config.before :suite do
-    CodeClimate::TestReporter.start
     DatabaseCleaner.strategy = :truncation
     DatabaseCleaner.orm = "mongoid"
   end
@@ -34,4 +34,5 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   c.hook_into :webmock
   c.ignore_localhost = true
+  c.ignore_hosts 'codeclimate.com'
 end
