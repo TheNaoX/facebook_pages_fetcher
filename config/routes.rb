@@ -4,7 +4,9 @@ Rails.application.routes.draw do
     controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
 
 
-  resources :home, only: [:index]
+  resources :home, only: [:index] do
+    collection { get :enter }
+  end
 
   root to: "home#index"
 
