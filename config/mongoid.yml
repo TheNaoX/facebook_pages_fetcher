@@ -15,5 +15,4 @@ test:
 production:
   sessions:
     default:
-      database: facebook_pages_fetcher
       uri: <%= ENV['MONGOHQ_URL'] %>
