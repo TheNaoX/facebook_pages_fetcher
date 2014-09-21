@@ -31,6 +31,17 @@ RSpec.configure do |config|
   config.deprecation_stream = File.open('log/deprecations.log', 'w')
 end
 
+OmniAuth.config.mock_auth[:facebook] = OmniAuth::AuthHash.new(
+  provider: "facebook",
+  uid:      "12345678",
+  info: {
+    email: "email@example.com",
+    name:  "john",
+    image: "http://google.com/"
+  }
+)
+
+
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   c.hook_into :webmock
