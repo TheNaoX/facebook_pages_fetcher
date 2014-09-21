@@ -3,6 +3,9 @@ require 'rails_helper'
 describe Facebook::PostsController do
   render_views
 
+  let(:user) { create(:user) }
+  before { sign_in user }
+
   describe "#index" do
     let(:page) { create(:facebook_page) }
 

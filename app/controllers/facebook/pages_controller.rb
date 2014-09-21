@@ -5,6 +5,8 @@ module Facebook
         status: :unprocessable_entity
     end
 
+    before_filter :authenticate_user!
+
     include ActionController::MimeResponds
 
     def index

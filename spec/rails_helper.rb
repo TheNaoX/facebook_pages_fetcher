@@ -15,6 +15,7 @@ RSpec.configure do |config|
 
   config.include Mongoid::Matchers, type: :model
   config.include FactoryGirl::Syntax::Methods
+  config.include Devise::TestHelpers, type: :controller
 
   Capybara.javascript_driver = :webkit
 
