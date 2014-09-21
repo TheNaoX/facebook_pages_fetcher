@@ -3,9 +3,13 @@
     .row
       .large-12.columns
         .headline-container
-          = link_to "javascript:void(0)", class: "th" do
-            = image_tag @page.profile_picture
-          h2 = @page.name
+          .large-1.columns
+            = link_to "javascript:void(0)", class: "th" do
+              = image_tag @page.profile_picture
+          .large-2.columns
+            h2 = @page.name
+          .large-9.columns
+            p = @page.about
 
   .background-white
     .row
