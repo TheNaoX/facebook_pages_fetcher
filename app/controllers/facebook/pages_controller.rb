@@ -5,6 +5,11 @@ module Facebook
         status: :unprocessable_entity
     end
 
+    rescue_from Mongoid::Errors::Validations do |e|
+      render json: { page: { errors: e.message } },
+        status: :unprocessable_entity
+    end
+
     def index
       @pages = FacebookPage.all
     end
