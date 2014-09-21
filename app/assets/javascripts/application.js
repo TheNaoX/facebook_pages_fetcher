@@ -15,7 +15,17 @@
 //= require turbolinks
 //= require modernizr/modernizr
 //= require angularjs/angular
+//= require angular-resource/angular-resource
 //= require foundation/js/foundation
 //= require jquery-placeholder/jquery.placeholder
 //= require jquery.cookie/jquery.cookie
+//= require init
+//= require_tree ./models/
+//= require_tree ./controllers/
 //= require_tree .
+
+$(function(){
+  $(document).on('ready page:load', function() {
+    angular.bootstrap(document, ['FBFetcher']);
+  })
+});

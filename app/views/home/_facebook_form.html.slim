@@ -1,0 +1,13 @@
+.row
+  form#new_facebook_page(ng-submit="submit_facebook_page()")
+    .large-6.columns.large-offset-2
+      input#facebook_id(
+        type="text"
+        ng-model="page.facebook_id"
+        placeholder= "Facebook page id. Example: 188091757763"
+        ng-required
+      )
+
+    .large-2.columns
+      = submit_tag :add, class: "button expand"
+    .large-2.columns

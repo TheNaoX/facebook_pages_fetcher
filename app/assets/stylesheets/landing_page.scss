@@ -1,0 +1,17 @@
+.header-container {
+  text-align: center;
+}
+
+#new_facebook_page {
+  input#facebook_id {
+    margin-bottom: 1.25rem;
+    height: 51px;
+  }
+}
+
+#stored-pages-container  {
+  .facebook-page-item-container {
+    display: block;
+    img, h3 { display: inline-block; }
+  }
+}

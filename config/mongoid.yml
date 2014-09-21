@@ -5,7 +5,7 @@ development:
       hosts:
         - localhost:27017
 
-development:
+test:
   sessions:
     default:
       database: facebook_pages_fetcher_test

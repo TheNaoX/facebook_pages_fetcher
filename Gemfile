@@ -14,17 +14,22 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'puma'
 gem 'slim'
+gem 'koala'
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'pry'
   gem 'spring'
+  gem 'rspec-rails'
   gem "spring-commands-rspec"
+  gem 'factory_girl_rails', '~> 4.0'
 end
 
 group :test do
   gem 'rspec'
   gem 'capybara'
+  gem 'mongoid-rspec'
   gem 'capybara-webkit'
+  gem 'database_cleaner'
 end
 
 gem 'rails_12factor', group: :production
