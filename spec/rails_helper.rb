@@ -15,8 +15,11 @@ RSpec.configure do |config|
 
   config.include Mongoid::Matchers, type: :model
   config.include FactoryGirl::Syntax::Methods
+  config.include Devise::TestHelpers, type: :controller
 
   Capybara.javascript_driver = :webkit
+
+  OmniAuth.config.test_mode = true
 
   config.before :suite do
     DatabaseCleaner.strategy = :truncation
@@ -27,12 +30,14 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
+  VCR.configure do |c|
+    c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+    c.hook_into :webmock
+    c.ignore_localhost = true
+    c.ignore_hosts 'codeclimate.com'
+  end
+
   config.deprecation_stream = File.open('log/deprecations.log', 'w')
 end
 
-VCR.configure do |c|
-  c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
-  c.hook_into :webmock
-  c.ignore_localhost = true
-  c.ignore_hosts 'codeclimate.com'
-end
+

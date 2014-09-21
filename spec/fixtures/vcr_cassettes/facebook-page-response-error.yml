@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://graph.facebook.com/?access_token=CAADFZAIL8xY8BAB3c2ygdSGEqhowzbzenpMeZBvVLrguBTMvHNMfsZCf7aLjhmqdvY2kCmSQD6mdlLhNxeZByG8QDqZCzVzHZC3TQCMQJyqWDKjQ2hqSlFeZAtZBG8LUnaYqMVoiO8iUSgiytC6zVuTlwsdXx7X4fxMymIQOSP7Ex2KP3ch8Q5rWkurJxsDRKNlSEFBXgUFRZC2Y4OBPYcvZBs
+    uri: https://graph.facebook.com/?access_token=CAAVAaohiQCsBAPslz1wJ28G9ZAr0oZAwnOVXWQUdVLRi3Xiue7FgrVa0xiGAeAHGEbWqyV8iGYDZAGR62J6Eg1dsRAi86MDX72Q4NZAb0RAebp7I6ZAPshqIyZC62kIJ8Jaff3Y0tdbxJkDuLZBl5J1poHv7PgZCnztOFdcdanfLRPgT4mErotLBmF0ELMGIRmVQ6iYLjhG0Yqcl9AHe4WMT
     body:
       encoding: US-ASCII
       string: ''
@@ -22,7 +22,7 @@ http_interactions:
       - OAuth "Facebook Platform" "invalid_request" "Unsupported get request. Please
         read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
       Facebook-Api-Version:
-      - v1.0
+      - v2.1
       Content-Type:
       - application/json; charset=UTF-8
       Pragma:
@@ -36,9 +36,9 @@ http_interactions:
       Expires:
       - Sat, 01 Jan 2000 00:00:00 GMT
       X-Fb-Debug:
-      - i6gsn3TuA9rWTbt+Ig5xduVzgMiESwJH/R1Rkz/tkfbH8IeBcdeJ1wZ2Q0O/tCp2RUmEh3jCCFpQS2k7nMWUsg==
+      - 9vCWdnenXvwamC16HcnwUSm+P6h9oHG74PawORIt1dJz0+jPd3k/C899cutckVY7Pb2mvnrG46zKAhIeSimHeg==
       Date:
-      - Sun, 21 Sep 2014 04:19:11 GMT
+      - Sun, 21 Sep 2014 18:05:25 GMT
       Connection:
       - keep-alive
       Content-Length:
@@ -48,5 +48,5 @@ http_interactions:
       string: '{"error":{"message":"Unsupported get request. Please read the Graph
         API documentation at https:\/\/developers.facebook.com\/docs\/graph-api","type":"GraphMethodException","code":100}}'
     http_version: 
-  recorded_at: Sun, 21 Sep 2014 04:19:11 GMT
+  recorded_at: Sun, 21 Sep 2014 18:05:25 GMT
 recorded_with: VCR 2.9.3

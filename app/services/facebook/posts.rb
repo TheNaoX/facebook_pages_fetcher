@@ -1,10 +1,12 @@
 module Facebook
   module Posts
     extend self
-    def all(facebook_id)
-      token = Rails.application.secrets.facebook_token
-      graph = Koala::Facebook::API.new(token)
+    def all(facebook_id, user)
+      graph = Koala::Facebook::API.new(user.access_token)
       get_posts(graph, facebook_id)
+    rescue Koala::Facebook::AuthenticationError => e
+      user.renew_token
+      all(facebook_id, user)
     end
 
     # To get wall posts, use get_connections(user, "feed")

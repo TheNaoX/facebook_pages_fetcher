@@ -12,7 +12,6 @@
 //
 //= require jquery/dist/jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require modernizr/modernizr
 //= require angular/angular
 //= require angular-resource/angular-resource

@@ -1,0 +1,9 @@
+.row.header-container
+  .large-12.columns
+    h1 FetcherApp
+    h4 Login with facebook to get started:
+  .large-12.columns
+    #facebook_login_button
+      = link_to user_omniauth_authorize_path(:facebook), class: "button" do
+        i.fa.fa-facebook
+        |  | Sign up with facebook

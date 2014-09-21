@@ -3,8 +3,12 @@ require 'rails_helper'
 describe Facebook::PagesController do
   render_views
 
+  let(:user) { create(:user) }
+
+  before { sign_in user }
+
   describe "#index" do
-    before { create(:facebook_page) }
+    before { create(:facebook_page, user: user) }
 
     it "returns the array of stored facebook pages" do
       get :index, format: :json

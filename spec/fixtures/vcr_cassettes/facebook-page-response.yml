@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://graph.facebook.com/188091757763?access_token=CAADFZAIL8xY8BAB3c2ygdSGEqhowzbzenpMeZBvVLrguBTMvHNMfsZCf7aLjhmqdvY2kCmSQD6mdlLhNxeZByG8QDqZCzVzHZC3TQCMQJyqWDKjQ2hqSlFeZAtZBG8LUnaYqMVoiO8iUSgiytC6zVuTlwsdXx7X4fxMymIQOSP7Ex2KP3ch8Q5rWkurJxsDRKNlSEFBXgUFRZC2Y4OBPYcvZBs
+    uri: https://graph.facebook.com/188091757763?access_token=CAAVAaohiQCsBAPslz1wJ28G9ZAr0oZAwnOVXWQUdVLRi3Xiue7FgrVa0xiGAeAHGEbWqyV8iGYDZAGR62J6Eg1dsRAi86MDX72Q4NZAb0RAebp7I6ZAPshqIyZC62kIJ8Jaff3Y0tdbxJkDuLZBl5J1poHv7PgZCnztOFdcdanfLRPgT4mErotLBmF0ELMGIRmVQ6iYLjhG0Yqcl9AHe4WMT
     body:
       encoding: US-ASCII
       string: ''
@@ -19,9 +19,9 @@ http_interactions:
       message: OK
     headers:
       Facebook-Api-Version:
-      - v1.0
+      - v2.1
       Etag:
-      - '"61761db182c3a12e34a91d601937cb221cfc3205"'
+      - '"055f1b78f4ce27e30e2e9863c9d29fea94418062"'
       Content-Type:
       - application/json; charset=UTF-8
       Pragma:
@@ -35,13 +35,13 @@ http_interactions:
       Expires:
       - Sat, 01 Jan 2000 00:00:00 GMT
       X-Fb-Debug:
-      - 78d42bdSwmb+ZAMVHlj2RI5RqZeYFyNdHYAahUkiHBBBrW9As4iVD1nPkNj5R+Rfcb6o0+1bvgLaM0oEGkXpAg==
+      - XSAaEMkt/BEbpRR5qtAt/vj791jfV6JWcbykaniF9ERSX2SY9TSzT9wW2lflsGiyFud+QH2JNXuR9fr2iShSrw==
       Date:
-      - Sun, 21 Sep 2014 04:19:17 GMT
+      - Sun, 21 Sep 2014 18:04:39 GMT
       Connection:
       - keep-alive
       Content-Length:
-      - '1529'
+      - '1530'
     body:
       encoding: UTF-8
       string: '{"id":"188091757763","about":"Connecting 71.251.932 people on Facebook
@@ -52,7 +52,7 @@ http_interactions:
         Media Management Made easy.\n\nWe help you optimize and streamline your business
         actions with our amazingly simple Social Media Management Software.\n\nWorking
         with more than 80 iconic brands, the company has run campaigns across 60 countries
-        and serving 72 million people.\n","founded":"2009","has_added_app":false,"is_community_page":false,"is_published":true,"likes":10949,"link":"https:\/\/www.facebook.com\/Tigerlilyapps","location":{"city":"Paris","country":"France","latitude":48.851546070062,"longitude":2.3764281178548,"street":"94
+        and serving 72 million people.\n","founded":"2009","has_added_app":false,"is_community_page":false,"is_published":true,"likes":10951,"link":"https:\/\/www.facebook.com\/Tigerlilyapps","location":{"city":"Paris","country":"France","latitude":48.851546070062,"longitude":2.3764281178548,"street":"94
         avenue Ledru Rollin","zip":"75011"},"mission":"The Tigerlily software helps
         iconic brands grow their business through social media. \n\nOptimize your
         conversations, engage users trough rich contents or contests and analyze your
@@ -69,12 +69,12 @@ http_interactions:
         actionable metrics that helps you boost your performance dramatically.\nAccess
         some simple and accurate reports based on your criteria and private data.
         Enhance your social mix (organic, paid and earned) and compare all your Pages
-        and their KPIs.","talking_about_count":14,"username":"Tigerlilyapps","website":"http:\/\/www.tigerlilyapps.com","were_here_count":254}'
+        and their KPIs.","talking_about_count":12,"username":"Tigerlilyapps","website":"http:\/\/www.tigerlilyapps.com","were_here_count":254}'
     http_version: 
-  recorded_at: Sun, 21 Sep 2014 04:19:17 GMT
+  recorded_at: Sun, 21 Sep 2014 18:04:39 GMT
 - request:
     method: get
-    uri: https://graph.facebook.com/188091757763/picture?access_token=CAADFZAIL8xY8BAB3c2ygdSGEqhowzbzenpMeZBvVLrguBTMvHNMfsZCf7aLjhmqdvY2kCmSQD6mdlLhNxeZByG8QDqZCzVzHZC3TQCMQJyqWDKjQ2hqSlFeZAtZBG8LUnaYqMVoiO8iUSgiytC6zVuTlwsdXx7X4fxMymIQOSP7Ex2KP3ch8Q5rWkurJxsDRKNlSEFBXgUFRZC2Y4OBPYcvZBs
+    uri: https://graph.facebook.com/188091757763/picture?access_token=CAAVAaohiQCsBAPslz1wJ28G9ZAr0oZAwnOVXWQUdVLRi3Xiue7FgrVa0xiGAeAHGEbWqyV8iGYDZAGR62J6Eg1dsRAi86MDX72Q4NZAb0RAebp7I6ZAPshqIyZC62kIJ8Jaff3Y0tdbxJkDuLZBl5J1poHv7PgZCnztOFdcdanfLRPgT4mErotLBmF0ELMGIRmVQ6iYLjhG0Yqcl9AHe4WMT
     body:
       encoding: US-ASCII
       string: ''
@@ -93,7 +93,7 @@ http_interactions:
       Location:
       - https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/v/t1.0-1/c41.41.517.517/s50x50/11179_10151833627657764_975049116_n.png?oh=86e3d701c8502f220ffd2465a814e0d3&oe=54C95D6E&__gda__=1422533764_5bba56186a9c529062950b09514f1362
       Facebook-Api-Version:
-      - v1.0
+      - v2.1
       Content-Type:
       - image/jpeg
       Pragma:
@@ -107,9 +107,9 @@ http_interactions:
       Expires:
       - Sat, 01 Jan 2000 00:00:00 GMT
       X-Fb-Debug:
-      - v8F2jPbZFHrFJVdhvZG/8frnaQjDJm21WQnQ8qeRVMIo/Vs9c2JKylNzVZXYxx2XiF0gIE+OUNxegR7dy+ZTNA==
+      - KeLLNx7AcDwy3gubCYxLzXZWcW6wxiI7g0HRuy0RdNRiM0Tx9Vb5RViihRLel8lbaY9Xxr2Xz7emUs9n2GBDiA==
       Date:
-      - Sun, 21 Sep 2014 04:12:35 GMT
+      - Sun, 21 Sep 2014 17:53:13 GMT
       Connection:
       - keep-alive
       Content-Length:
@@ -118,5 +118,124 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 21 Sep 2014 04:19:18 GMT
+  recorded_at: Sun, 21 Sep 2014 18:04:39 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/188091757763?access_token=CAAVAaohiQCsBAPslz1wJ28G9ZAr0oZAwnOVXWQUdVLRi3Xiue7FgrVa0xiGAeAHGEbWqyV8iGYDZAGR62J6Eg1dsRAi86MDX72Q4NZAb0RAebp7I6ZAPshqIyZC62kIJ8Jaff3Y0tdbxJkDuLZBl5J1poHv7PgZCnztOFdcdanfLRPgT4mErotLBmF0ELMGIRmVQ6iYLjhG0Yqcl9AHe4WMT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Facebook-Api-Version:
+      - v2.1
+      Etag:
+      - '"055f1b78f4ce27e30e2e9863c9d29fea94418062"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fb-Rev:
+      - '1422324'
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - Pf2RbJ4BADNjZ12Z/sNDAdRn0MADyC86uLf9SPC7dN2s0RXUrIiVaK6Ak+6iConRNCNqW67sPK+g92o+2wbXOw==
+      Date:
+      - Sun, 21 Sep 2014 18:04:49 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1530'
+    body:
+      encoding: UTF-8
+      string: '{"id":"188091757763","about":"Connecting 71.251.932 people on Facebook
+        and Twitter. We are a Preferred Marketing Developer. Contact us: info\u0040tigerlilyapps.com","awards":"Best
+        Web App at the Facebook Mobile Hack - London 2012\nSilver Award LeWeb09\nWinner
+        Mini SeedCamp 2010\nFinalist SeedCamp 2010","can_post":true,"category":"Internet\/software","category_list":[{"id":"358483060859947","name":"Startup"},{"id":"152142351517013","name":"Corporate
+        Office"}],"checkins":254,"cover":{"cover_id":"10152119553822764","offset_x":0,"offset_y":0,"source":"https:\/\/fbcdn-sphotos-b-a.akamaihd.net\/hphotos-ak-xpa1\/v\/t1.0-9\/s720x720\/1503977_10152119553822764_108979917_n.png?oh=12bd91c19c884632192146c59c72bc48&oe=54C8C174&__gda__=1419038924_7c104e4a1bdb88aa2004c858e2ae1bc2"},"description":"Social
+        Media Management Made easy.\n\nWe help you optimize and streamline your business
+        actions with our amazingly simple Social Media Management Software.\n\nWorking
+        with more than 80 iconic brands, the company has run campaigns across 60 countries
+        and serving 72 million people.\n","founded":"2009","has_added_app":false,"is_community_page":false,"is_published":true,"likes":10951,"link":"https:\/\/www.facebook.com\/Tigerlilyapps","location":{"city":"Paris","country":"France","latitude":48.851546070062,"longitude":2.3764281178548,"street":"94
+        avenue Ledru Rollin","zip":"75011"},"mission":"The Tigerlily software helps
+        iconic brands grow their business through social media. \n\nOptimize your
+        conversations, engage users trough rich contents or contests and analyze your
+        performances.\n\n","name":"Tigerlily","parking":{"lot":0,"street":0,"valet":0},"phone":"+
+        33 1 82 28 38 61","products":"The Social Marketing Platform\nA powerful dashboard
+        to manage all your social media campaigns according to your needs.\n\nConversations\nOptimize
+        monitoring and posting across Facebook & Twitter.\nAutomate monitoring to
+        filter and dispatch user contents efficiently. Optimize topics, post types
+        and timing of your posts based on relevant KPIs and identify precisely how
+        active and influential your users are.\n\nApplications\nCreate unique social
+        apps to maximize impressions, acquisitions, conversions and even PR.\nCreate
+        and manage apps that delivers on your goals. Localize and geotarget your campaigns
+        and access users profiles, detailed insights including Google analytics.\n\nInsights\nAccess
+        actionable metrics that helps you boost your performance dramatically.\nAccess
+        some simple and accurate reports based on your criteria and private data.
+        Enhance your social mix (organic, paid and earned) and compare all your Pages
+        and their KPIs.","talking_about_count":12,"username":"Tigerlilyapps","website":"http:\/\/www.tigerlilyapps.com","were_here_count":254}'
+    http_version: 
+  recorded_at: Sun, 21 Sep 2014 18:04:48 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/188091757763/picture?access_token=CAAVAaohiQCsBAPslz1wJ28G9ZAr0oZAwnOVXWQUdVLRi3Xiue7FgrVa0xiGAeAHGEbWqyV8iGYDZAGR62J6Eg1dsRAi86MDX72Q4NZAb0RAebp7I6ZAPshqIyZC62kIJ8Jaff3Y0tdbxJkDuLZBl5J1poHv7PgZCnztOFdcdanfLRPgT4mErotLBmF0ELMGIRmVQ6iYLjhG0Yqcl9AHe4WMT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: forced.302
+    headers:
+      Location:
+      - https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/v/t1.0-1/c41.41.517.517/s50x50/11179_10151833627657764_975049116_n.png?oh=86e3d701c8502f220ffd2465a814e0d3&oe=54C95D6E&__gda__=1422533764_5bba56186a9c529062950b09514f1362
+      Facebook-Api-Version:
+      - v2.1
+      Content-Type:
+      - image/jpeg
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fb-Rev:
+      - '1422324'
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - KeLLNx7AcDwy3gubCYxLzXZWcW6wxiI7g0HRuy0RdNRiM0Tx9Vb5RViihRLel8lbaY9Xxr2Xz7emUs9n2GBDiA==
+      Date:
+      - Sun, 21 Sep 2014 17:53:13 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 21 Sep 2014 18:04:49 GMT
 recorded_with: VCR 2.9.3

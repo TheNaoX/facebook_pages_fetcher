@@ -1,0 +1,10 @@
+.row
+  .large-12.columns
+    - if notice
+      p.alert-box.info
+        = notice
+        = link_to "&times;".html_safe, "#", class: "close"
+    - if alert
+      p.alert-box.alert
+        = alert
+        = link_to "&times;".html_safe, "#", class: "close"

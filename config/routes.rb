@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  resources :home, only: [:index]
+  devise_for :users,
+    only: [ :omniauth_callbacks, :sessions ],
+    controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
+
+
+  resources :home, only: [:index] do
+    collection { get :enter }
+  end
 
   root to: "home#index"
 
