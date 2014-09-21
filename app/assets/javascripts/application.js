@@ -15,12 +15,13 @@
 //= require modernizr/modernizr
 //= require angular/angular
 //= require angular-resource/angular-resource
-//= require angular-timeago/src/timeAgo
+//= require moment/moment
 //= require foundation/js/foundation
 //= require jquery-placeholder/jquery.placeholder
 //= require jquery.cookie/jquery.cookie
 //= require init
 //= require_tree ./models/
+//= require_tree ./filters/
 //= require_tree ./controllers/
 //= require_tree .
 
