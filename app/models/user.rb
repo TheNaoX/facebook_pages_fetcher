@@ -54,7 +54,7 @@ class User
   def renew_token
     oauth_hash = Facebook::TokenRenewer.(access_token)
     self.access_token         = oauth_hash['access_token']
-    self.access_token_expires = oauth_hash['expires']
+    self.access_token_expires = (Time.now + oauth_hash['expires'].to_i).to_i
     save!
   end
 end

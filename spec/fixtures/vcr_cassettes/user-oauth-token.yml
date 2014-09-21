@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://graph.facebook.com/oauth/access_token
+    body:
+      encoding: UTF-8
+      string: client_id=1478201182404651&client_secret=0a78b0a1fda0590bda0c7a23c08658fb&fb_exchange_token=CAAVAaohiQCsBAPslz1wJ28G9ZAr0oZAwnOVXWQUdVLRi3Xiue7FgrVa0xiGAeAHGEbWqyV8iGYDZAGR62J6Eg1dsRAi86MDX72Q4NZAb0RAebp7I6ZAPshqIyZC62kIJ8Jaff3Y0tdbxJkDuLZBl5J1poHv7PgZCnztOFdcdanfLRPgT4mErotLBmF0ELMGIRmVQ6iYLjhG0Yqcl9AHe4WMT&grant_type=fb_exchange_token
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Facebook-Api-Version:
+      - v1.0
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fb-Rev:
+      - '1422324'
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - D1pIBKNvmnack2qo3JFhfbuecb57k70GRUd/Jc1L8MqoqkRA2b8B5os40MtnXeIykwdgy1RVBHoho+aN8iCsoA==
+      Date:
+      - Sun, 21 Sep 2014 18:23:13 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '211'
+    body:
+      encoding: UTF-8
+      string: access_token=CAAVAaohiQCsBAJeYzKeuG0j84VYq4DcyJqlRlkvCIewZAkn8KcGyQ1isxrAHYWX1p99f178pDNoaJE0jyrcPZA4CUDq0DZBOAjdNkVIPfEN7gjNhM30iZCjD3ipH57yplGVyKaGld4W17kh1smpCpmouEmj5n1kIgVKGO7tdjYYomebVQZCLS&expires=5174015
+    http_version: 
+  recorded_at: Sun, 21 Sep 2014 18:23:13 GMT
+- request:
+    method: post
+    uri: https://graph.facebook.com/oauth/access_token
+    body:
+      encoding: UTF-8
+      string: client_id=1478201182404651&client_secret=0a78b0a1fda0590bda0c7a23c08658fb&fb_exchange_token=CAAVAaohiQCsBAPslz1wJ28G9ZAr0oZAwnOVXWQUdVLRi3Xiue7FgrVa0xiGAeAHGEbWqyV8iGYDZAGR62J6Eg1dsRAi86MDX72Q4NZAb0RAebp7I6ZAPshqIyZC62kIJ8Jaff3Y0tdbxJkDuLZBl5J1poHv7PgZCnztOFdcdanfLRPgT4mErotLBmF0ELMGIRmVQ6iYLjhG0Yqcl9AHe4WMT&grant_type=fb_exchange_token
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Facebook-Api-Version:
+      - v1.0
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fb-Rev:
+      - '1422324'
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - m32naLkvhuB7ptJdxYkw9wKeW75cGUeKXh0xEevA/ESwOop6F3Oqpq5fDBNe4pwewTGq9gYv10ua8dO8YTHyGA==
+      Date:
+      - Sun, 21 Sep 2014 18:25:28 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '225'
+    body:
+      encoding: UTF-8
+      string: access_token=CAAVAaohiQCsBAIGgpqTvzhPxoHXT3gF2powexhNfodEO8ZBoKDG2BiNuJ0U9hZCg9wfRep2pXvWs4wPPZBV4woExZAqmLdazNz2TTX4npokIbOEfRaGb8x14IdKU24HvfGviZCGY1HtXEZCUXv776tQLrFTxoOInnc26VHR4c5ezsl9b1cNdYHY6A8ipvKj78ZD&expires=5173880
+    http_version: 
+  recorded_at: Sun, 21 Sep 2014 18:25:28 GMT
+recorded_with: VCR 2.9.3

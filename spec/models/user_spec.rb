@@ -23,4 +23,18 @@ describe User do
       end.to_not change(User, :count)
     end
   end
+
+  describe "#renew_token" do
+    let(:user) { create(:user) }
+
+    it "gets the token from the oauth API and updates it" do
+      VCR.use_cassette("user-oauth-token") do
+        token      = user.access_token
+        expires_at = user.access_token_expires
+        user.renew_token
+        expect(user.access_token).to_not eq(token)
+        expect(user.access_token_expires).to be > expires_at
+      end
+    end
+  end
 end
