@@ -3,10 +3,9 @@ module Facebook
     extend self
 
     def call(facebook_id, user)
-      token = Rails.application.secrets.facebook_token
       graph = Koala::Facebook::API.new(user.access_token)
       create_page(graph, facebook_id, user.id)
-    rescue Exception => e
+    rescue Koala::Facebook::AuthenticationError => e
       user.renew_token
       call(facebook_id, user)
     end

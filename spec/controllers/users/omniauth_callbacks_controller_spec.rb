@@ -3,7 +3,19 @@ require 'rails_helper'
 describe Users::OmniauthCallbacksController do
   before do
     request.env["devise.mapping"] = Devise.mappings[:user]
-    request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:facebook]
+    request.env["omniauth.auth"] = OmniAuth::AuthHash.new(
+      provider: "facebook",
+      uid:      "12345678",
+      info: {
+        email: "email@example.com",
+        name:  "john",
+        image: "http://google.com/"
+      },
+      credentials: {
+        token: "foo",
+        expires_at: 1.hour.from_now.to_i
+      }
+    )
   end
 
   describe "#facebook" do

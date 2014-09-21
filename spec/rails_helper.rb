@@ -20,15 +20,6 @@ RSpec.configure do |config|
   Capybara.javascript_driver = :webkit
 
   OmniAuth.config.test_mode = true
-  OmniAuth.config.mock_auth[:facebook] = OmniAuth::AuthHash.new(
-    provider: "facebook",
-    uid:      "12345678",
-    info: {
-      email: "email@example.com",
-      name:  "john",
-      image: "http://google.com/"
-    }
-  )
 
   config.before :suite do
     DatabaseCleaner.strategy = :truncation

@@ -6,7 +6,7 @@ end
 
 describe User do
   describe ".from_omniauth" do
-    let(:credentials) { double token: "foo" }
+    let(:credentials) { double token: "foo", expires_at: 1.hour.from_now.to_i }
     let(:info) { double email: "email@example.com", name: "John", image: "http://google.com" }
     let(:auth) { double provider: "facebook", uid: "12345678", info: info, credentials: credentials }
 
